@@ -6,7 +6,7 @@ const User = require('./User');
 const userSchema = new Schema(
     {
       username: String,
-      last: String,
+      email: String,
       age: Number,
       thoughts: [
         {
