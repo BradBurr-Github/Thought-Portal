@@ -5,7 +5,8 @@ module.exports = {
   // Then we return the results as JSON, and catch any errors. Errors are sent as JSON with a message and a 500 status code
   async getThoughts(req, res) {
     try {
-      const thoughts = await Thought.find();
+      console.log('TEST')
+      const thoughts = await Thought.find({});
       res.json(thoughts);
     } catch (err) {
       res.status(500).json(err);

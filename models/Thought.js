@@ -1,5 +1,7 @@
+const moment  = require('moment');
 const { Schema, model } = require('mongoose');
 const User = require('./User');
+
 //const Reaction = require('./Reaction');
 
 // Schema to create User model
@@ -20,7 +22,7 @@ const thoughtSchema = new Schema(
       createdAt: {
         type: Date,
         default: Date.now(),
-        //get: (val) => moment(val).format('MMMM Do, YYYY')
+        get: (val) => moment(val).format('MMMM Do, YYYY')
       },
     },
     {
@@ -28,11 +30,11 @@ const thoughtSchema = new Schema(
       // Here we are indicating that we want virtuals to be included with our response, overriding the default behavior
       toJSON: {
         virtuals: true,
-        //getters: true,
+        getters: true,
       },
-      // toObject: {
-      //   getters: true
-      // },
+      toObject: {
+        getters: true
+      },
       id: false,
     }
   );
