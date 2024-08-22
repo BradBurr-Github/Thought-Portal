@@ -5,7 +5,7 @@ module.exports = {
   // Then we return the results as JSON, and catch any errors. Errors are sent as JSON with a message and a 500 status code
   async getThoughts(req, res) {
     try {
-      const thoughts = await Thought.find({});
+      const thoughts = await Thought.find();
       res.json(thoughts);
     } catch (err) {
       res.status(500).json(err);
@@ -71,7 +71,9 @@ module.exports = {
   // Then if the thought exists, we look for any users associated with the thought based on the thought ID and update the thoughts array for the User.
   async deleteThought(req, res) {
     try {
-      const thought = await Thought.findOneAndRemove({ _id: req.params.thoughtId });
+
+      console.log(req.params.thoughtId)
+      const thought = await Thought.findOneAndDelete({ _id: req.params.thoughtId });
 
       if (!thought) {
         return res.status(404).json({ message: 'No thought with this id!' });
