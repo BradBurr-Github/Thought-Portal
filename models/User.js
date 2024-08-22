@@ -24,13 +24,13 @@ const userSchema = new Schema(
       thoughts: [
         {
           type: Schema.Types.ObjectId,
-          ref: 'Thought',
+          ref: 'thought',
         },
       ],
       friends: [
         {
           type: Schema.Types.ObjectId,
-          ref: 'User',
+          ref: 'user',
         },
       ],
     },
@@ -39,6 +39,7 @@ const userSchema = new Schema(
       // Here we are indicating that we want virtuals to be included with our response, overriding the default behavior
       toJSON: {
         virtuals: true,
+        getters: true
       },
       id: false,
     }
