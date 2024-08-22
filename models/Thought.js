@@ -22,7 +22,7 @@ const thoughtSchema = new Schema(
       createdAt: {
         type: Date,
         default: Date.now(),
-        get: (val) => moment(val).format('MMMM Do, YYYY')
+        get: (val) => moment(val).format('MM-DD-YYYY HH:mm')
       },
     },
     {

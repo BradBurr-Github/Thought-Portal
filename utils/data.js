@@ -45,7 +45,7 @@ const usernamesEmailAddresses = [
   { username: 'sebastianperry', email: 'sebastian.perry@gmail.com'},
   { username: 'madisonjenkins', email: 'madison.jenkins@gmail.com'},
   { username: 'dylanbell', email: 'dylan.bell@gmail.com'},
-  { username: 'averyjames', email: 'avery.james@gmail.com,'},
+  { username: 'averyjames', email: 'avery.james@gmail.com'},
   { username: 'levibailey', email: 'levi.bailey@gmail.com'},
   { username: 'penelopegreen', email: 'penelope.green@gmail.com'},
   { username: 'isaacwood', email: 'isaac.wood@gmail.com'},
