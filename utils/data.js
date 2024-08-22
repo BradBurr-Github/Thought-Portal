@@ -1,54 +1,54 @@
 const usernamesEmailAddresses = [
-  { username: 'EmilyHarper', email: 'emilyharper@gmail.com'},
-  { username: 'NoahWatson', email: 'emilyharper@gmail.com'},
-  { username: 'OliviaCarter', email: 'emilyharper@gmail.com'},
-  { username: 'LiamAnderson', email: 'emilyharper@gmail.com'},
-  { username: 'AvaMiller', email: 'emilyharper@gmail.com'},
-  { username: 'MasonParker', email: 'emilyharper@gmail.com'},
-  { username: 'SophiaBennett', email: 'emilyharper@gmail.com'},
-  { username: 'LucasDavis', email: 'emilyharper@gmail.com'},
-  { username: 'MiaBrooks', email: 'emilyharper@gmail.com'},
-  { username: 'ElijahGriffin', email: 'emilyharper@gmail.com'},
-  { username: 'IsabellaFoster', email: 'emilyharper@gmail.com'},
-  { username: 'BenjaminReed', email: 'emilyharper@gmail.com'},
-  { username: 'AmeliaJenkins', email: 'emilyharper@gmail.com'},
-  { username: 'JamesThompson', email: 'emilyharper@gmail.com'},
-  { username: 'CharlotteCooper', email: 'emilyharper@gmail.com'},
-  { username: 'EthanScott', email: 'emilyharper@gmail.com'},
-  { username: 'EvelynMitchell', email: 'emilyharper@gmail.com'},
-  { username: 'AlexanderMorgan', email: 'emilyharper@gmail.com'},
-  { username: 'AbigailPeterson', email: 'emilyharper@gmail.com'},
-  { username: 'DanielReynolds', email: 'emilyharper@gmail.com'},
-  { username: 'HarperSanders', email: 'emilyharper@gmail.com'},
-  { username: 'SamuelClark', email: 'emilyharper@gmail.com'},
-  { username: 'LilyHenderson', email: 'emilyharper@gmail.com'},
-  { username: 'JacksonWright', email: 'emilyharper@gmail.com'},
-  { username: 'AriaEvans', email: 'emilyharper@gmail.com'},
-  { username: 'MatthewAdams', email: 'emilyharper@gmail.com'},
-  { username: 'GraceMorris', email: 'emilyharper@gmail.com'},
-  { username: 'HenryTorres', email: 'emilyharper@gmail.com'},
-  { username: 'ScarlettTurner', email: 'emilyharper@gmail.com'},
-  { username: 'WyattGonzalez', email: 'emilyharper@gmail.com'},
-  { username: 'EllaWard', email: 'emilyharper@gmail.com'},
-  { username: 'JosephHayes', email: 'emilyharper@gmail.com'},
-  { username: 'ChloeBryant', email: 'emilyharper@gmail.com'},
-  { username: 'DavidFisher', email: 'emilyharper@gmail.com'},
-  { username: 'RileyButler', email: 'emilyharper@gmail.com'},
-  { username: 'LukePatterson', email: 'emilyharper@gmail.com'},
-  { username: 'ZoeyMartinez', email: 'emilyharper@gmail.com'},
-  { username: 'CarterNelson', email: 'emilyharper@gmail.com'},
-  { username: 'HannahPhillips', email: 'emilyharper@gmail.com'},
-  { username: 'OwenRichardson', email: 'emilyharper@gmail.com'},
-  { username: 'ScarlettCollins', email: 'emilyharper@gmail.com'},
-  { username: 'CalebRogers', email: 'emilyharper@gmail.com'},
-  { username: 'NoraFlores', email: 'emilyharper@gmail.com'},
-  { username: 'SebastianPerry', email: 'emilyharper@gmail.com'},
-  { username: 'MadisonJenkins', email: 'emilyharper@gmail.com'},
-  { username: 'DylanBell', email: 'emilyharper@gmail.com'},
-  { username: 'AveryJames', email: 'emilyharper@gmail.com'},
-  { username: 'LeviBailey', email: 'emilyharper@gmail.com'},
-  { username: 'PenelopeGreen', email: 'emilyharper@gmail.com'},
-  { username: 'IsaacWood', email: 'emilyharper@gmail.com'},
+  { username: 'emilyharper', email: 'emily.harper@gmail.com'},
+  { username: 'noahwatson', email: 'noah.watson@gmail.com'},
+  { username: 'oliviacarter', email: 'olivia.carter@gmail.com'},
+  { username: 'liamanderson', email: 'liam.anderson@gmail.com'},
+  { username: 'avamiller', email: 'ava.miller@gmail.com'},
+  { username: 'masonparker', email: 'mason.parker@gmail.com'},
+  { username: 'sophiabennett', email: 'sophia.bennett@gmail.com'},
+  { username: 'lucasdavis', email: 'lucas.davis@gmail.com'},
+  { username: 'miabrooks', email: 'mia.brooks@gmail.com'},
+  { username: 'elijahgriffin', email: 'elijah.griffin@gmail.com'},
+  { username: 'isabellafoster', email: 'isabella.foster@gmail.com'},
+  { username: 'benjaminreed', email: 'benjamin.reed@gmail.com'},
+  { username: 'ameliajenkins', email: 'amelia.jenkins@gmail.com'},
+  { username: 'jamesthompson', email: 'james.thompson@gmail.com'},
+  { username: 'charlottecooper', email: 'charlotte.cooper@gmail.com'},
+  { username: 'ethanscott', email: 'ethan.scott@gmail.com'},
+  { username: 'evelynmitchell', email: 'evelyn.mitchell@gmail.com'},
+  { username: 'alexandermorgan', email: 'alexander.morgan@gmail.com'},
+  { username: 'abigailpeterson', email: 'abigail.peterson@gmail.com'},          
+  { username: 'danielreynolds', email: 'daniel.reynolds@gmail.com'},
+  { username: 'harpersanders', email: 'harper.sanders@gmail.com'},
+  { username: 'samuelclark', email: 'samuel.clark@gmail.com'},
+  { username: 'lilyhenderson', email: 'lily.henderson@gmail.com'},
+  { username: 'jacksonwright', email: 'jackson.wright@gmail.com'},
+  { username: 'ariaevans', email: 'aria.evans@gmail.com'},
+  { username: 'matthewadams', email: 'matthew.adams@gmail.com'},
+  { username: 'gracemorris', email: 'grace.morris@gmail.com'},
+  { username: 'henrytorres', email: 'henry.torres@gmail.com'},
+  { username: 'scarlettturner', email: 'scarlett.turner@gmail.com'},            
+  { username: 'wyattgonzalez', email: 'wyatt.gonzalez@gmail.com'},
+  { username: 'ellaward', email: 'ella.ward@gmail.com'},
+  { username: 'josephhayes', email: 'joseph.hayes@gmail.com'},
+  { username: 'chloebryant', email: 'chloe.bryant@gmail.com'},
+  { username: 'davidfisher', email: 'david.fisher@gmail.com'},
+  { username: 'rileybutler', email: 'riley.butler@gmail.com'},
+  { username: 'lukepatterson', email: 'luke.patterson@gmail.com'},
+  { username: 'zoeymartinez', email: 'zoey.martinez@gmail.com'},
+  { username: 'carternelson', email: 'carter.nelson@gmail.com'},
+  { username: 'hannahphillips', email: 'hannah.phillips@gmail.com'},
+  { username: 'owenrichardson', email: 'owen.richardson@gmail.com'},
+  { username: 'scarlettcollins', email: 'scarlett.collins@gmail.com'},
+  { username: 'calebrogers', email: 'caleb.rogers@gmail.com'},
+  { username: 'noraflores', email: 'nora.flores@gmail.com'},
+  { username: 'sebastianperry', email: 'sebastian.perry@gmail.com'},
+  { username: 'madisonjenkins', email: 'madison.jenkins@gmail.com'},
+  { username: 'dylanbell', email: 'dylan.bell@gmail.com'},
+  { username: 'averyjames', email: 'avery.james@gmail.com,'},
+  { username: 'levibailey', email: 'levi.bailey@gmail.com'},
+  { username: 'penelopegreen', email: 'penelope.green@gmail.com'},
+  { username: 'isaacwood', email: 'isaac.wood@gmail.com'},
 ];
 
 const thoughts = [
@@ -157,43 +157,82 @@ const reactions = [
   "I didn’t do anything wrong; why are you blaming me?",
 ];
 
-const users = [];
-
 // Get a random item given an array
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-// Gets a random full name
-const getRandomName = () =>
-  `${getRandomArrItem(names)} ${getRandomArrItem(names)}`;
+// Gets a random username and email
+const getRandomUsernameAndEmail = () => {
+  const arrayLength = usernamesEmailAddresses.length;
+  const index = Math.floor(Math.random() * arrayLength);
+  return usernamesEmailAddresses[index];
+}
 
-// Function to generate random applications that we can add to the database. Includes application tags.
-const getRandomApplications = (int) => {
+// Function to get a random thought
+const getRandomThought = () => {
+  return getRandomArrItem(thoughts);
+};
+
+
+// // Function to generate random thoughts that we can add to the database. Includes thought reactions.
+// const getRandomThoughts = () => {
+//   let results = [];
+//   let thoughtsCount = Math.floor(Math.random() * 3) + 1;
+//   for (let i = 0; i < thoughtsCount; i++) {
+//     let temp = getRandomArrItem(thoughts)
+//     results.push({
+      
+      
+//       thoughtText: temp,
+//       //reactions: [...getRandomReactions()],
+//     });
+//   }
+//   //console.log(results);
+//   return results;
+// };
+
+// Create the reactions that will be added to each thought
+const getRandomReactions = () => {
   let results = [];
-  for (let i = 0; i < int; i++) {
+  let usernameEmail = [];
+  const thoughtCount = Math.floor(Math.random() * 3) + 1;
+  for (let i = 0; i < thoughtCount; i++) {
+    usernameEmail = getRandomUsernameAndEmail();
     results.push({
-      published: Math.random() < 0.5,
-      description: getRandomArrItem(appDescriptions),
-      buildSuccess: Math.random() < 0.5,
-      tags: [...getApplicationTags(3)],
+      reaction: getRandomArrItem(reactions),
+      username: usernameEmail.username,
     });
   }
   return results;
 };
 
-// Create the tags that will be added to each application
-const getApplicationTags = (int) => {
-  if (int === 1) {
-    return getRandomArrItem(possibleTags);
-  }
-  const results = [];
-  for (let i = 0; i < int; i++) {
-    results.push({
-      tagBody: getRandomArrItem(possibleTags),
-      username: getRandomName(),
-    });
-  }
-  return results;
-};
+function getRandomTimeOfDay() {
+  // Generate a random number of minutes in a day (0 to 1439)
+  const totalMinutesInDay = 24 * 60; // 1440 minutes in a day
+  const randomMinutes = Math.floor(Math.random() * totalMinutesInDay);
+  // Convert random minutes to hours and minutes
+  const hours = Math.floor(randomMinutes / 60);
+  const minutes = randomMinutes % 60;
+  // Create a new Date object for the random time
+  const randomDate = new Date();
+  randomDate.setHours(hours, minutes, 0, 0); // Set hours, minutes, seconds, and milliseconds
+  return randomDate.toTimeString().slice(0, 5); // Returns time in HH:MM format
+}
+
+// Get random Date over the past 30 days
+function getRandomDateInPast30Days() {
+  const now = new Date();
+  // Calculate the date and time 30 days ago
+  const pastDate = new Date();
+  pastDate.setDate(now.getDate() - 30);
+  // Get the time in milliseconds for both dates
+  const nowTime = now.getTime();
+  const pastDateTime = pastDate.getTime();
+  // Generate a random number of milliseconds between the two timestamps
+  const randomTime = Math.floor(Math.random() * (nowTime - pastDateTime + 1)) + pastDateTime;
+  // Create a new Date object from the random milliseconds
+  const randomDate = new Date(randomTime);
+  return randomDate;
+}
 
 // Export the functions for use in seed.js
-module.exports = { getRandomName, getRandomApplications };
+module.exports = { getRandomUsernameAndEmail, getRandomThought, getRandomDateInPast30Days };
