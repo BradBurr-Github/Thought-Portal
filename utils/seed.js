@@ -95,7 +95,7 @@ connection.once('open', async () => {
         let createAt = getRandomDateInPast30Days();
         let insertThought = [{
           thoughtText: thoughtText,
-          username: users[i]._id,
+          username: users[i].username,
           createAt: createAt
         }]
         // Add new thought to the Thought Collection
@@ -103,7 +103,7 @@ connection.once('open', async () => {
         // Add new thoughts to the current thought's array
         thoughts.push( {
           thoughtText: thoughtText,
-          username: users[i]._id,
+          username: users[i].username,
           createAt: createAt
         })
         // Add new thought to the current user's thoughts array

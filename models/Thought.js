@@ -5,17 +5,22 @@ const User = require('./User');
 // Schema to create User model
 const thoughtSchema = new Schema(
     {
-      thoughtText: String,
-      username: [
-        {
-          type: Schema.Types.ObjectId,
+      thoughtText: {
+        type: String,
+        required: true,
+        minlength: 1,
+        maxlength: 280,
+      },
+      username: {
+          type: Schema.Types.String,
+          required: true,
           ref: 'User',
-        },
-      ],
+      },
     //   reactions: [Reaction],
       createdAt: {
         type: Date,
         default: Date.now(),
+        //get: (val) => moment(val).format('MMMM Do, YYYY')
       },
     },
     {
@@ -23,7 +28,11 @@ const thoughtSchema = new Schema(
       // Here we are indicating that we want virtuals to be included with our response, overriding the default behavior
       toJSON: {
         virtuals: true,
+        //getters: true,
       },
+      // toObject: {
+      //   getters: true
+      // },
       id: false,
     }
   );

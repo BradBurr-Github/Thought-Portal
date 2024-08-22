@@ -4,8 +4,22 @@ const Thought = require('./Thought');
 // Schema to create User model
 const userSchema = new Schema(
     {
-      username: String,
-      email: String,
+      username: {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true
+      },
+      email: {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true,
+        match: [
+          /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/,  // Regular expression for email validation
+          'Please fill a valid email address'  // Custom error message if the validation fails
+        ]
+      },
       age: Number,
       thoughts: [
         {
