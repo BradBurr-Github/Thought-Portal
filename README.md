@@ -5,7 +5,7 @@ Thought Portal is a robust backend tool that allows users to post their Thoughts
 <br/>
 <img src="./assets/images/webpage.png" alt="Thought Portal image"/>
 <br/>
-Click <a href="https://drive.google.com/file/d/15a8bDGHoqQpV6CecbwsptvAQ-AgdvcNE/view" target="_blank">here</a> to view the walk-through video of Thought Portal.</p>
+Click <a href="https://drive.google.com/file/d/1LIzeK4itG_waLpH7ojRhrRhHSpK2H38k/view" target="_blank">here</a> to view the walk-through video of Thought Portal.</p>
 <br/>
 ## Table of Contents
 1. [Installation](#installation)
