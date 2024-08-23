@@ -1,8 +1,6 @@
 const moment  = require('moment');
 const { Schema, model } = require('mongoose');
-const User = require('./User');
-
-//const Reaction = require('./Reaction');
+const reactionSchema = require('./Reaction');
 
 // Schema to create User model
 const thoughtSchema = new Schema(
@@ -18,7 +16,7 @@ const thoughtSchema = new Schema(
           required: true,
           ref: 'User',
       },
-    //   reactions: [Reaction],
+      reactions: [reactionSchema],
       createdAt: {
         type: Date,
         default: Date.now(),
@@ -40,12 +38,12 @@ const thoughtSchema = new Schema(
   );
   
   // Create a virtual property `reactionCount` that gets the thought's reaction count
-//   thoughtSchema
-//     .virtual('reactionCount')
-//     // Getter
-//     .get(function () {
-//         return this.reactions.length;
-//     });
+  thoughtSchema
+    .virtual('reactionCount')
+    // Getter
+    .get(function () {
+        return this.reactions.length;
+    });
   
   // Initialize our Thought model
   const Thought = model('thought', thoughtSchema);

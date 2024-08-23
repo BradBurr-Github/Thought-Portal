@@ -1,4 +1,4 @@
-const { Thought, User, Reaction } = require('../models');
+const { Thought, User } = require('../models');
 
 module.exports = {
   // Function to get all of the thoughts by invoking the find() method with no arguments.
@@ -90,7 +90,7 @@ module.exports = {
     }
   },
   // Adds a reaction to a thought. This method is unique in that we add the entire body of the reaction rather than the ID with the mongodb $addToSet operator.
-  async addReaction(req, res) {
+  async createReaction(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(
         { _id: req.params.thoughtId },
@@ -108,7 +108,7 @@ module.exports = {
     }
   },
   // Remove thought reaction. This method finds the thought based on ID. It then updates the reactions array associated with the thought in question by removing it's reactionId from the reactions array.
-  async removeReaction(req, res) {
+  async deleteReaction(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(
         { _id: req.params.thoughtId },

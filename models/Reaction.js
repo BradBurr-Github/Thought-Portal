@@ -9,6 +9,7 @@ const reactionSchema = new Schema(
     reactionBody: {
       type: String,
       required: true,
+      minlength: 1,
       maxlength: 280,
     },
     username: {
@@ -17,15 +18,19 @@ const reactionSchema = new Schema(
     },
     createdAt: {
       type: Date,
-      default: Date.now,
+      default: Date.now(),
+      get: (val) => moment(val).format('MM-DD-YYYY HH:mm')
     },
   },
   {
     toJSON: {
       getters: true,
     },
+    toObject: {
+      getters: true
+    },
     id: false,
   }
 );
 
-module.exports = responseSchema;
+module.exports = reactionSchema;
