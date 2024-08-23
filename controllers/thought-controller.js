@@ -71,7 +71,6 @@ module.exports = {
   // Then if the thought exists, we look for any users associated with the thought based on the thought ID and update the thoughts array for the User.
   async deleteThought(req, res) {
     try {
-
       const thought = await Thought.findOneAndDelete({ _id: req.params.thoughtId });
 
       if (!thought) {
@@ -89,42 +88,40 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // // Adds a reaction to a thought. This method is unique in that we add the entire body of the reaction rather than the ID with the mongodb $addToSet operator.
-  // async createReaction(req, res) {
-  //   try {
-  //     console.log('begin')
-  //     const thought = await Thought.findOneAndUpdate(
-  //       { _id: req.params.thoughtId },
-  //       { $addToSet: { reactions: req.body } },
-  //       { runValidators: true, new: true }
-  //     );
-  //     console.log('end')
+  // Adds a reaction to a thought. This method is unique in that we add the entire body of the reaction rather than the ID with the mongodb $addToSet operator.
+  async createReaction(req, res) {
+    try {
+      const thought = await Thought.findOneAndUpdate(
+        { _id: req.params.thoughtId },
+        { $addToSet: { reactions: req.body } },
+        { runValidators: true, new: true }
+      );
 
-  //     if (!thought) {
-  //       return res.status(404).json({ message: 'No thought with this id!' });
-  //     }
+      if (!thought) {
+        return res.status(404).json({ message: 'No thought with this id!' });
+      }
 
-  //     res.json(thought);
-  //   } catch (err) {
-  //     res.status(500).json(err);
-  //   }
-  // },
-  // // Remove thought reaction. This method finds the thought based on ID. It then updates the reactions array associated with the thought in question by removing it's reactionId from the reactions array.
-  // async deleteReaction(req, res) {
-  //   try {
-  //     const thought = await Thought.findOneAndUpdate(
-  //       { _id: req.params.thoughtId },
-  //       { $pull: { reactions: { reactionId: req.params.reactionId } } },
-  //       { runValidators: true, new: true }
-  //     );
+      res.json(thought);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  },
+  // Remove thought reaction. This method finds the thought based on ID. It then updates the reactions array associated with the thought in question by removing it's reactionId from the reactions array.
+  async deleteReaction(req, res) {
+    try {
+      const thought = await Thought.findOneAndUpdate(
+        { _id: req.params.thoughtId },
+        { $pull: { reactions: { reactionId: req.params.reactionId } } },
+        { runValidators: true, new: true }
+      );
 
-  //     if (!thought) {
-  //       return res.status(404).json({ message: 'No thought with this id!' });
-  //     }
+      if (!thought) {
+        return res.status(404).json({ message: 'No thought with this id!' });
+      }
 
-  //     res.json(thought);
-  //   } catch (err) {
-  //     res.status(500).json(err);
-  //   }
-  // },
+      res.json(thought);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  },
 };
